@@ -6,7 +6,7 @@ const uuid = require('uuidv4')
 
 const app = express();
 
-app.use('/api', pets)
+app.use('/', pets)
 
 // create connection
 const db = mysql.createConnection({

@@ -3,7 +3,6 @@ const mysql = require("mysql");
 const uuid = require('uuidv4')
 
 const app = express();
-
 const router = express.Router();
 
 // create connection
