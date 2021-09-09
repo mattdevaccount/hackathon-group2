@@ -24,7 +24,17 @@ const db = mysql.createConnection({
     });
   });
 
-// insert pet 1
+// select single pet
+  router.get('/getpet/:id', (req, res) => {
+    let sql = `SELECT * FROM pets WHERE id = ${req.params.id}`;
+    let query = db.query(sql, (err, result) => {
+      if (err) throw err;
+      console.log(result);
+      res.send('Pet fetched!')
+    });
+  });  
+
+// insert pet 1 test
 router.post('/addPet1', (req, res) => {
     let pet = { name: 'Mittens', city: 'Toronto', description: 'black shorthair' };
     let sql = 'INSERT INTO pets SET ?';
@@ -33,16 +43,6 @@ router.post('/addPet1', (req, res) => {
       console.log(result);
       res.send('Pet 1 added')
     })
-  })
-  
-  // select single pet
-  router.get('/getpet/:id', (req, res) => {
-    let sql = `SELECT * FROM pets WHERE id = ${req.params.id}`;
-    let query = db.query(sql, (err, result) => {
-      if (err) throw err;
-      console.log(result);
-      res.send('Pet fetched!')
-    });
   });
   
   // update pet info
