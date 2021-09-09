@@ -13,6 +13,7 @@ const db = mysql.createConnection({
     database: 'pets_db'
   });
 
+
 // select all pets
   router.get('/getpets', (req, res) => {
     let sql = "SELECT * FROM pets";

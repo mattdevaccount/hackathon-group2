@@ -6,6 +6,7 @@ const uuid = require('uuidv4')
 
 const app = express();
 
+// using routes to add pets
 app.use('/', pets)
 
 // create connection
@@ -22,6 +23,17 @@ db.connect((err) => {
     throw err;
   }
   console.log("MySQL Connected!");
+});
+
+// creating pets table
+app.get("/createpetstable", () => {
+  let sql =
+    "CREATE TABLE pets(id int AUTO_INCREMENT, title VARCHAR(255), body VARCHAR(255), PRIMARY KEY(id))";
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    res.send("pets table created!");
+  });
 });
 
 // running after server starts
