@@ -36,7 +36,7 @@ const db = mysql.createConnection({
 
 // insert pet 1 test
 router.post('/addPet1', (req, res) => {
-    let pet = { name: 'Mittens', city: 'Toronto', description: 'black shorthair' };
+    let pet = { name: 'Mittens', city: 'Toronto', description: 'black shorthair', id: uuid.uuid() };
     let sql = 'INSERT INTO pets SET ?';
     let query = db.query(sql, pet, (err, result) => {
       if (err) throw err;
