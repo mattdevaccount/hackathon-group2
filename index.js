@@ -29,6 +29,6 @@ app.get('/createdb', (req, res) => {
   });
 
 // running after server starts
-app.listen("3306", () => {
-  console.log("Server started on port 3306!");
+app.listen("8080", () => {
+  console.log("Server started on port 8080!");
 });
