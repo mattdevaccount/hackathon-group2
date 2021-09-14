@@ -24,7 +24,7 @@ const db = mysql.createConnection({
   });
 
 // select single pet
-  router.get('/getpet/:id', (req, res) => {
+  router.get('/getpets/:id', (req, res) => {
     let sql = `SELECT * FROM pets WHERE id = ${req.params.id}`;
     let query = db.query(sql, (err, result) => {
       if (err) throw err;
@@ -35,7 +35,7 @@ const db = mysql.createConnection({
 
 // insert pet 1 test
 router.post('/addPet1', (req, res) => {
-    let pet = { name: 'Mittens', city: 'Toronto', description: 'black shorthair', id: uuid.uuid() };
+    let pet = { name: 'Snowball', city: 'Toronto', description: 'white longhair', id: uuid.v4() };
     let sql = 'INSERT INTO pets SET ?';
     let query = db.query(sql, pet, (err, result) => {
       if (err) throw err;

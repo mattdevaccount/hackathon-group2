@@ -26,7 +26,7 @@ const db = mysql.createConnection({
 // select single user
   router.get('/getuser/:id', (req, res) => {
     let sql = `SELECT * FROM users WHERE id = ${req.params.id}`;
-    let query = db.query(sql, (err, result) => {
+    let query = db.query(sql, (err, result) => {1
       if (err) throw err;
       console.log(result);
       res.send('Particular User fetched!')
