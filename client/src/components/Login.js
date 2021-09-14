@@ -1,28 +1,28 @@
 import React, { useState } from "react";
 import Cookies from 'js-cookie';
 import { useHistory } from "react-router-dom";
+import { Container, Row, Col, 
+    Form, InputGroup, InputGroupAddon, InputGroupText, 
+    Button, FormGroup, Label, Input} from 'reactstrap';
 
 
-function Login(props) {
+function CreateAccount() {
 
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const history = useHistory();
+    let history = useHistory()
 
-    const clickHandler= () => {
+    let location = useLocation()
 
-        const data = {
-            username,
-            password
-        };
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [auth, setAuth] = useState(true)
+    const [showPassword, setShowPassword] = useState(false)
 
         return (
-            <div className="LoginPage">
+            <div className="CreateAccount">
                 <h2>Login</h2>
             </div>
         )
 
-    }
 }
 
 export default Login;
