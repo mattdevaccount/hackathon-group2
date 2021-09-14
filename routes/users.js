@@ -46,7 +46,7 @@ router.post('/addUser', (req, res) => {
   
   // update user info
   router.patch('/updateuser/:id', (req, res) => {
-    let newName = 'Toronto Humane Society';
+    let newName = 'Toronto Humane Society II';
     let sql = `UPDATE users SET name = '${newName}' WHERE id = ${req.params.id}`;
     let query = db.query(sql, (err, result) => {
       if (err) throw err;

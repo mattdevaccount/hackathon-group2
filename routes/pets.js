@@ -35,14 +35,26 @@ const db = mysql.createConnection({
 
 // insert pet 1 test
 router.post('/addPet1', (req, res) => {
-    let pet = { name: 'Snowball', city: 'Toronto', description: 'white longhair', id: uuid.v4() };
+    let pet = { name: 'Snowball', city: 'Toronto', description: 'white longhair', id: uuid.uuid() };
     let sql = 'INSERT INTO pets SET ?';
     let query = db.query(sql, pet, (err, result) => {
       if (err) throw err;
       console.log(result);
-      res.send('Pet 1 added')
+      res.send(`${pet.name} added`)
     })
   });
+
+  // insert pet 2 test
+router.post('/addPet2', (req, res) => {
+  let pet = { name: 'Snowball II', city: 'Toronto', description: 'black longhair', id: uuid.uuid() };
+  let sql = 'INSERT INTO pets SET ?';
+  let query = db.query(sql, pet, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    res.send(`${pet.name} added`)
+  })
+});
+
   
   // update pet info
   router.patch('/updatepet/:id', (req, res) => {
@@ -56,7 +68,7 @@ router.post('/addPet1', (req, res) => {
   });
   
   // remove pet
-  router.delete("/deletepet/:id", (req, res) => {
+  router.delete('/deletepet/:id', (req, res) => {
     let sql = `DELETE FROM pets WHERE id = ${req.params.id}`;
     let query = db.query(sql, (err, result) => {
       if (err) throw err;
