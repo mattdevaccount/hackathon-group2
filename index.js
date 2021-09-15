@@ -2,6 +2,7 @@ const express = require("express");
 const mysql = require("mysql");
 
 const pets = require('./routes/pets')
+const users = require('./routes/users')
 const uuid = require('uuidv4')
 
 const app = express();
@@ -33,6 +34,17 @@ app.get("/createpetstable", () => {
     if (err) throw err;
     console.log(result);
     res.send("pets table created!");
+  });
+});
+
+// creating a users table
+app.get("/createuserstable", () => {
+  let sql =
+    "CREATE TABLE users(id VARCHAR(255), name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), PRIMARY KEY(id))";
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    res.send("users table created!");
   });
 });
 
