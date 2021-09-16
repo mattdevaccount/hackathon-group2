@@ -39,7 +39,8 @@ router.post("/addPet1", (req, res) => {
   let pet = {
     name: "Snowball",
     city: "Toronto",
-    description: "white longhair"
+    description: "white longhair",
+    pet_uuid: uuid.uuid()
   };
   let sql = "INSERT INTO pets SET ?";
   let query = db.query(sql, pet, (err, result) => {
@@ -54,7 +55,8 @@ router.post("/addPet2", (req, res) => {
   let pet = {
     name: "Snowball II",
     city: "Toronto",
-    description: "black longhair"
+    description: "black longhair",
+    pet_uuid: uuid.uuid()
   };
   let sql = "INSERT INTO pets SET ?";
   let query = db.query(sql, pet, (err, result) => {
