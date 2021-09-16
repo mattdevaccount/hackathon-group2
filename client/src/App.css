@@ -46,3 +46,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.LoginBox {
+  height: 540px;
+  width: 790px;
+  color: #ffffff;
+  align-items: center;
+}
