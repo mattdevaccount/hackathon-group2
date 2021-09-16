@@ -10,16 +10,17 @@ const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
       margin: theme.spacing(1),
-      width: "35ch",
+      width: "40ch",
     },
   },
 }));
 
 const theme = createTheme({
   palette: {
-    primary: blue,
-  },
+    primary: blue
+}
 });
+
 
 export default function ContactForm() {
   const classes = useStyles();

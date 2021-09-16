@@ -8,7 +8,7 @@ const uuid = require('uuidv4')
 const app = express();
 
 // using routes to add pets
-app.use('/', pets)
+app.use('/', pets, users)
 
 // create connection
 const db = mysql.createConnection({
@@ -40,7 +40,7 @@ app.get("/createpetstable", () => {
 // creating a users table
 app.get("/createuserstable", () => {
   let sql =
-    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), PRIMARY KEY(id))";
+    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);

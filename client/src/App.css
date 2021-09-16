@@ -5,6 +5,11 @@
 
 .contact-form-subheader1 {
   font-weight: bold;
+  font-size: larger;
+}
+
+.contact-form-subheader2 {
+  font-size: medium;
 }
 
 #contact-form-root {
