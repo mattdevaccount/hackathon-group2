@@ -29,7 +29,6 @@ function App() {
   return (
     <Router>
       <div className="Pages">
-        <Nav />
         <Switch>
           <Route path="/Home">
             <Home />

@@ -1,28 +1,48 @@
 import React, { useState } from "react";
 import Cookies from 'js-cookie';
 import { useHistory } from "react-router-dom";
-import { Container, Row, Col, 
-    Form, InputGroup, InputGroupAddon, InputGroupText, 
-    Button, FormGroup, Label, Input} from 'reactstrap';
+import TextField from '@material-ui/core/TextField';
+import { Field, reduxForm } from 'redux-form';
 
 
-function CreateAccount() {
 
-    let history = useHistory()
 
-    let location = useLocation()
+function Login() {
 
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
-    const [auth, setAuth] = useState(true)
-    const [showPassword, setShowPassword] = useState(false)
+    // const renderField = ({ input, label, type, meta: { touched, error } }) => (
+    //     <div>
+    //       <label>{label}</label>
+    //       <div>
+    //         <input {...input} placeholder={label} type={type}/>
+    //         {touched && error && <span>{error}</span>}
+    //       </div>
+    //     </div>
+    //   )
 
         return (
-            <div className="CreateAccount">
-                <h2>Login</h2>
+            <div className="LoginPage">
+                <div className="LoginBox">
+                    <h2>New Tails</h2>
+                    <p>Welcome Back!</p>
+                    <form>
+                        <label>Email</label>
+                        <div>
+                            <Field name="email" component="input" type="text"/>
+                        </div>
+
+                        <label>Password</label>
+                        <div>
+                            <Field name="password" component="input" type="text"/>
+                        </div>
+
+                        <button className="LoginButton">Login</button>
+                    </form>
+                </div>
             </div>
         )
-
 }
 
+Login = reduxForm({
+    form: 'loginForm'
+})(Login)
 export default Login;
