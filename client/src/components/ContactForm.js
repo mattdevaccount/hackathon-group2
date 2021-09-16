@@ -15,9 +15,10 @@ export default function ContactForm() {
     const classes = useStyles();
 
     return (
-        <form className={classes.root} noValidate autoComplete='off'>
+        <form className={classes.root} id='contact-form' noValidate autoComplete='off'>
             <TextField variant='outlined' label='First Name'></TextField>
             <TextField variant='outlined' label='Last Name'></TextField>
+            <TextField variant='outlined' label='Email'></TextField>
         </form>
     )
 }
