@@ -19,6 +19,7 @@ router.get("/getpets", (req, res) => {
   let query = db.query(sql, (err, results) => {
     if (err) throw err;
     console.log(results);
+    console.log(typeof req.params.id);
     res.send("Pets fetched!");
   });
 });
@@ -38,8 +39,7 @@ router.post("/addPet1", (req, res) => {
   let pet = {
     name: "Snowball",
     city: "Toronto",
-    description: "white longhair",
-    id: uuid.uuid(),
+    description: "white longhair"
   };
   let sql = "INSERT INTO pets SET ?";
   let query = db.query(sql, pet, (err, result) => {
@@ -54,8 +54,7 @@ router.post("/addPet2", (req, res) => {
   let pet = {
     name: "Snowball II",
     city: "Toronto",
-    description: "black longhair",
-    id: uuid.uuid(),
+    description: "black longhair"
   };
   let sql = "INSERT INTO pets SET ?";
   let query = db.query(sql, pet, (err, result) => {
@@ -80,9 +79,10 @@ router.patch("/updatepet/:id", (req, res) => {
 router.delete("/deletepet/:id", (req, res) => {
   let sql = `DELETE FROM pets WHERE id = ${req.params.id}`;
   let query = db.query(sql, (err, result) => {
-    if (err) throw err;
+    console.log(req.params.id)
     console.log(result);
     res.send("Pet Removed from Database!");
+    if (err) throw err;
   });
 });
 

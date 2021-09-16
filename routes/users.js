@@ -34,10 +34,10 @@ const db = mysql.createConnection({
   });  
 
 // insert test user
-router.post('/addUser', (req, res) => {
-    let pet = { name: 'Toonrot Humane Society', city: 'Toronto', description: 'Animal Shelter', id: uuid.uuid() };
+router.post('/adduser', (req, res) => {
+    let user = { name: 'Toronto Humane Society', city: 'Toronto', description: 'Animal Shelter', id: uuid.uuid() };
     let sql = 'INSERT INTO users SET ?';
-    let query = db.query(sql, pet, (err, result) => {
+    let query = db.query(sql, user, (err, result) => {
       if (err) throw err;
       console.log(result);
       res.send('User 1 added')
