@@ -67,7 +67,7 @@ router.delete("/deleteuser/:id", (req, res) => {
   let query = db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);
-    res.send("User Removed from Database!");
+    res.send('User Removed from Database!');
   });
 });
 
