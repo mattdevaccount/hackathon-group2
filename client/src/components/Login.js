@@ -1,31 +1,32 @@
 import React, { useState } from "react";
 import Cookies from 'js-cookie';
 import { useHistory } from "react-router-dom";
-import { TextField, Button } from '@material-ui/core/';
+import { Button, Box } from '@material-ui/core/';
 
 
 function Login() {
 
 
-        return (
-            <div className="LoginPage">
-                <div className="LoginBox">
-                    <h2>New Tails</h2>
-                    <p>Welcome Back!</p>
-                    <form>
-                        <div>
-                            <input name="email" component="input" type="text"/>
-                        </div>
+    return (
+        <div className="LoginPage">
 
-                        <div>
-                            <input name="password" component="input" type="text"/>
-                        </div>
+            <Box className="LoginBox">
+                <h2>New Tails</h2>
+                <p>Welcome Back!</p>
+                <form>
+                    <div>
+                        <input name="email" component="input" type="text"/>
+                    </div>
 
-                        <Button className="LoginButton" variant="contained">Login</Button>
-                    </form>
-                </div>
-            </div>
-        )
+                    <div>
+                        <input name="password" component="input" type="text"/>
+                    </div>
+
+                    <Button className="LoginButton" variant="contained">Login</Button>
+                </form>
+            </Box>
+        </div>
+    )
 }
 
 export default Login;

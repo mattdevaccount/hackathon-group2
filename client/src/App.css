@@ -45,11 +45,23 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .LoginBox {
-  height: 540px;
-  width: 790px;
-  color: #ffffff;
+  height: 307px;
+  width: 500px;
+  background-color: #ffffff;
   align-items: center;
+  color: #000000;
+  box-shadow: black;
 }
+
+/* .testbox {
+  height: 100px;
+  width: 100px;
+  background-color: goldenrod;
+} */
