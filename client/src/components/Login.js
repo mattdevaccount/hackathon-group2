@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import Cookies from 'js-cookie';
 import { useHistory } from "react-router-dom";
-import { Container, Row, Col, 
-    Form, InputGroup, InputGroupAddon, InputGroupText, 
-    Button, FormGroup, Label, Input} from 'reactstrap';
+import { Button, Box } from '@material-ui/core/';
 
 
-function CreateAccount() {
+function Login() {
 
-    let history = useHistory()
 
-    let location = useLocation()
+    return (
+        <div className="LoginPage">
 
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
-    const [auth, setAuth] = useState(true)
-    const [showPassword, setShowPassword] = useState(false)
+            <Box className="LoginBox">
+                <h2>New Tails</h2>
+                <p>Welcome Back!</p>
+                <form>
+                    <div>
+                        <input name="email" component="input" type="text"/>
+                    </div>
 
-        return (
-            <div className="CreateAccount">
-                <h2>Login</h2>
-            </div>
-        )
+                    <div>
+                        <input name="password" component="input" type="text"/>
+                    </div>
 
+                    <Button className="LoginButton" variant="contained">Login</Button>
+                </form>
+            </Box>
+        </div>
+    )
 }
 
 export default Login;
