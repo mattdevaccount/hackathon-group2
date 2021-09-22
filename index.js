@@ -29,7 +29,7 @@ db.connect((err) => {
 // creating pets table
 app.get("/createpetstable", () => {
   let sql =
-    "CREATE TABLE pets(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), pet_uuid VARCHAR(255), PRIMARY KEY(id))";
+    "CREATE TABLE pets(id int AUTO_INCREMENT, name VARCHAR(255), breed VARCHAR(255), age int, colour VARCHAR(255), hair VARCHAR(255), city VARCHAR(255), description VARCHAR(255), pet_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);
