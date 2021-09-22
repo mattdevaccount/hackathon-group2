@@ -14,15 +14,19 @@ function Login() {
                 <h2>New Tails</h2>
                 <p>Welcome Back!</p>
                 <form>
-                    <div>
-                        <input name="email" component="input" type="text"/>
+                    <div className="EmailTitle">
+                        <p>Email</p>
+                        <div className="EmailForm">
+                            <input className="email" component="input" type="text"/>
+                        </div>
                     </div>
 
-                    <div>
-                        <input name="password" component="input" type="text"/>
+                    <div className="PasswordTitle">
+                        <p>Password</p>
+                        <input className="password" component="input" type="text"/>
                     </div>
 
-                    <Button className="LoginButton" variant="contained">Login</Button>
+                    <button className="LoginButton" variant="contained">Login</button>
                 </form>
             </Box>
         </div>

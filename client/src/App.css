@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -52,16 +54,82 @@
 }
 
 .LoginBox {
-  height: 307px;
-  width: 500px;
+  height: 370px;
+  width: 530px;
   background-color: #ffffff;
   align-items: center;
-  color: #000000;
-  box-shadow: black;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* .testbox {
-  height: 100px;
-  width: 100px;
-  background-color: goldenrod;
-} */
+.LoginBox h2 {
+  font-family: 'Gill Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #DF7F66;
+  margin-bottom: 0;
+}
+
+.LoginBox p {
+  font-family: 'Montserrat', sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.EmailTitle p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input.email {
+  margin-left: 35px;
+  width: 450px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.PasswordTitle p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input.password {
+  margin-left: 35px;
+  width: 450px;
+  height: 42px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.LoginButton {
+  background: #DF7F66;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 15px;
+  width: 140px;
+  height: 45px;
+  margin-left: 340px;
+  margin-top: 10px;
+  border: none;
+  font-size: 17px;
+}

@@ -30,41 +30,41 @@ function App() {
     <Router>
       <div className="Pages">
         <Switch>
-          <Route path="/Home">
+          {/* <Route path="/Home">
             <Home />
-          </Route>
+          </Route> */}
 
-          <Route path="/About">
+          {/* <Route path="/About">
             <About />
-          </Route>
+          </Route> */}
 
-          <Route path="/Search">
+          {/* <Route path="/Search">
             <Search />
-          </Route>
+          </Route> */}
 
-          <Route path="/Contact">
+          {/* <Route path="/Contact">
             <Contact />
-          </Route>
+          </Route> */}
 
           <Route path="/Login">
             <Login setIsLoggedIn={setIsLoggedIn}/>
           </Route>
           
-          <Route path="/Dashboard">
+          {/* <Route path="/Dashboard">
             <Dashboard />
-          </Route>
+          </Route> */}
 
-          <Route path="/LoggedIn">
+          {/* <Route path="/LoggedIn">
             <LoggedIn {...isLoggedIn ? <Dashboard /> : <Redirect to="/Login" />} />
-          </Route>
+          </Route> */}
 
-          <Route path="Post">
+          {/* <Route path="Post">
             <Post />
-          </Route>
+          </Route> */}
 
-          <Route path="Manage">
+          {/* <Route path="Manage">
             <Manage />
-          </Route>
+          </Route> */}
         </Switch>
       </div>
     </Router>
