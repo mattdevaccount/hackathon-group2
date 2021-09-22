@@ -1,17 +1,23 @@
-import './App.css';
+import "./App.css";
 import React, { useState } from "react";
-import Dashboard from './components/Dashboard';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from "react-router-dom";
+import About from './components/About';
+import Landing from "./components/Landing";
+import Navbar from "./components/Navbar";
+import PetProfile from "./components/PetProfile";
+import ContactForm from "./components/ContactForm";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-
   return (
-    <Dashboard />
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route path="/profile" component={PetProfile} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={ContactForm} />
+      </Switch>
+    </Router>
   );
 }
 
