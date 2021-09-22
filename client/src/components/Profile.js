@@ -1,7 +1,7 @@
 import React from "react";
 
 import profile from "./assets/Profile-Socks.jpg";
-import "./profile.css";
+import "./Profile/profile.css";
 import Stats from "./Profile/stats.js";
 import Button from "./Profile/button.js";
 import Footer from './Profile/Footer.js'
