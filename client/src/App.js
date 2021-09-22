@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React, { useState } from "react";
 import About from './components/About';
 import Landing from "./components/Landing";
