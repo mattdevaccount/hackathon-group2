@@ -1,4 +1,5 @@
 import "./App.scss";
+
 import React, { useState, useEffect } from "react";
 import About from './components/About';
 import Landing from "./components/Landing";
@@ -16,6 +17,7 @@ function App() {
 
   const getPetPool = async () => {
     const response = await axios.get('http://localhost:4000/getPets');
+    console.log(response.data);
     setPetPool(response.data);
     setPetPoolTrigger(false);
   }

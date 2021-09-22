@@ -20,7 +20,7 @@ router.get("/getpets", (req, res) => {
     if (err) throw err;
     console.log(results);
     console.log(typeof req.params.id);
-    res.send("Pets fetched!");
+    res.send(results);
   });
 });
 

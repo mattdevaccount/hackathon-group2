@@ -1,4 +1,7 @@
 import React from "react";
+
+import Button from "@material-ui/core/Button";
+
 import SocksPic from "./images/Profile-Socks.jpg";
 import SocksPic2 from "./images/Profile-Socks2.jpg";
 import SocksPic3 from "./images/Profile-Socks3.jpg";
@@ -19,13 +22,14 @@ export default function PetProfile() {
           <div className="profileCategory">Hair:</div>
           <div className="profileCategory">Pet ID:</div>
           <section className="smallImageRoll">
-        <img className="smallPicsProfile" src={SocksPic2} alt="smallpic2" />
-        <img className="smallPicsProfile" src={SocksPic3} alt="smallpic3" />
-        <img className="smallPicsProfile" src={SocksPic4} alt="smallpic4" />
-        <img className="smallPicsProfile" src={SocksPic5} alt="smallpic5" />
-      </section>
+            <img className="smallPicsProfile" src={SocksPic2} alt="smallpic2" />
+            <img className="smallPicsProfile" src={SocksPic3} alt="smallpic3" />
+            <img className="smallPicsProfile" src={SocksPic4} alt="smallpic4" />
+            <img className="smallPicsProfile" src={SocksPic5} alt="smallpic5" />
+          </section>
         </section>
       </section>
+      <Button variant="contained" className="submitButton">Test</Button>
     </main>
   );
 }

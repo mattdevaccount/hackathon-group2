@@ -1,11 +1,15 @@
 const express = require("express");
 const mysql = require("mysql");
+const cors = require('cors');
 
 const pets = require('./routes/pets')
 const users = require('./routes/users')
 const uuid = require('uuidv4')
 
 const app = express();
+
+// using cors
+app.use(cors());
 
 // using routes to add pets
 app.use('/', pets, users)
