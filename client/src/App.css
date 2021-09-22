@@ -30,3 +30,9 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.header {
+  display: flex;
+  width: 1440px;
+  height: 350px;
+}
