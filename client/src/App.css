@@ -33,6 +33,13 @@
 
 .header {
   display: flex;
+  position: relative;
   width: 1440px;
   height: 350px;
+}
+
+.navbar-links {
+  position: absolute;
+  top: 0;
+  right: 500px;
 }

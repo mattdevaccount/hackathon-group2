@@ -5,8 +5,6 @@ import { Button, Box } from '@material-ui/core/';
 
 
 function Login() {
-
-
     return (
         <div className="LoginPage">
 
