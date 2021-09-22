@@ -8,7 +8,6 @@ function Login() {
 
     return (
         <div className="LoginPage">
-
             <Box className="LoginBox">
                 <h2>New Tails</h2>
                 <p>Welcome Back!</p>

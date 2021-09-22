@@ -1,6 +1,9 @@
 import React from "react";
 
 import Button from "@material-ui/core/Button";
+import { blue, orange, red } from "@material-ui/core/colors";
+import { makeStyles } from "@material-ui/core/styles";
+import { createTheme } from "@mui/material/styles";
 
 import SocksPic from "./images/Profile-Socks.jpg";
 import SocksPic2 from "./images/Profile-Socks2.jpg";
@@ -9,6 +12,21 @@ import SocksPic4 from "./images/Profile-Socks4.jpg";
 import SocksPic5 from "./images/Profile-Socks5.jpg";
 
 export default function PetProfile() {
+    const useStyles = makeStyles((theme) => ({
+        root: {
+          "& > *": {
+            margin: theme.spacing(1),
+            width: "37ch",
+          },
+        },
+      }));
+      
+      const theme = createTheme({
+        palette: {
+          primary: blue
+      }
+      });
+
   return (
     <main className="profileBody">
       <section className="profile-topHalf">
@@ -29,7 +47,7 @@ export default function PetProfile() {
           </section>
         </section>
       </section>
-      <Button variant="contained" className="submitButton">Test</Button>
+      <Button variant="contained" className="adoptButton" color="primary" size="large">Adopt This Pet</Button>
     </main>
   );
 }

@@ -37,11 +37,13 @@
   height: 350px;
 }
 
+// navbar styling
+
 .navbar-links {
   display: flex;
   position: absolute;
   top: 0;
-  right: 600px;
+  left: 55%;
 }
 
 .navLink {
@@ -56,6 +58,8 @@
     text-decoration: none;
   }
 }
+
+// profile styling
 
 .profileBody {
   font-family: 'Montserrat', sans-serif;
@@ -96,4 +100,8 @@
 
 .profileCategory {
   font-weight: bolder;
+}
+
+.adoptButton {
+  display: flex;
 }
