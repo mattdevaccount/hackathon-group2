@@ -18,7 +18,7 @@ app.use('/', pets, users)
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'password123!',
+  password: 'password',
   database: 'pets_db'
 });
 
@@ -31,7 +31,7 @@ db.connect((err) => {
 });
 
 // creating pets table
-app.get("/createpetstable", () => {
+app.get("/createpetstable", (req, res) => {
   let sql =
     "CREATE TABLE pets(id int AUTO_INCREMENT, name VARCHAR(255), breed VARCHAR(255), age int, colour VARCHAR(255), hair VARCHAR(255), city VARCHAR(255), description VARCHAR(255), pet_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
@@ -42,7 +42,7 @@ app.get("/createpetstable", () => {
 });
 
 // creating a users table
-app.get("/createuserstable", () => {
+app.get("/createuserstable", (req, res) => {
   let sql =
     "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
