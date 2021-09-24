@@ -19,7 +19,7 @@ function CreateUser() {
 
                 <div className="CreatePassword">
                     <p>Password</p>
-                    <input className="CreatePassword" component="input" type="text"/>
+                    <input className="CreatePassword" component="input" type="password"/>
                 </div>
 
                 <div className="NameInfo">
