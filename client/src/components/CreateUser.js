@@ -22,7 +22,35 @@ function CreateUser() {
                     <input className="CreatePassword" component="input" type="text"/>
                 </div>
 
+                <div className="NameInfo">
+                    <div className="FirstName">
+                        <p>First Name</p>
+                        <input className="FirstName" component="input" type="text"/>
+                    </div>
 
+                    <div className="LastName">
+                        <p>Last Name</p>
+                        <input className="LastName" component="input" type="text"/>
+                    </div>
+                </div>
+
+                <div className="Org">
+                    <p>Organization Name</p>
+                    <input className="OrgName" component="input" type="text"/>
+                </div>
+
+                <div className="OrgAddress">
+                    <p>Organization Address</p>
+                    <input className="OrgAddress" component="input" type="text" placeholder="Address"/>
+                </div>
+
+                <div className="OrgDetails">
+                    <input className="OrgCity" component="input" type="text" placeholder="City"/>
+                    <input className="OrgProvince" component="input" type="text" placeholder="Province"/>
+                    <input className="OrgPostalCode" component="input" type="text" placeholder="Postal Code"/>
+                </div>
+
+                <button className="CreateButton" variant="contained">Create Account</button>
             </Box>
         </div>
     )

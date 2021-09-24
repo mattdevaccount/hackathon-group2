@@ -191,12 +191,12 @@ input.password {
 input.CreateEmail {
   margin-left: 35px;
   width: 450px;
-  height: 42px;
-  margin-bottom: 15px;
+  height: 35px;
+  margin-bottom: 6px;
   border-radius: 10px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .CreatePassword p {
@@ -210,10 +210,132 @@ input.CreateEmail {
 input.CreatePassword {
   margin-left: 35px;
   width: 450px;
-  height: 42px;
-  margin-bottom: 15px;
+  height: 35px;
+  margin-bottom: 6px;
   border-radius: 10px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  font-size: 13px;
+}
+
+.NameInfo {
+  display: inline-flex;
+  margin-left: 35px;
+}
+
+.NameInfo p {
+  font-weight: 700;
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.FirstName {
+  margin-right: 10px;
+}
+
+input.FirstName {
+  height: 35px;
+  width: 215px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+input.LastName {
+  height: 35px;
+  width: 215px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+.Org p {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: left;
+  margin-left: 35px;
+  margin-bottom: 5px;
+}
+
+input.OrgName {
+  margin-left: 35px;
+  width: 450px;
+  height: 35px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+.OrgAddress p {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: left;
+  margin-left: 35px;
+  margin-bottom: 5px;
+}
+
+input.OrgAddress {
+  margin-left: 35px;
+  width: 450px;
+  height: 37px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+.OrgDetails {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+input.OrgCity {
+  height: 35px;
+  width: 143px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+input.OrgProvince {
+  height: 35px;
+  width: 143px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+input.OrgPostalCode {
+  height: 35px;
+  width: 143px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.CreateButton {
+  background: #DF7F66;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 15px;
+  width: 160px;
+  height: 45px;
+  margin-left: 330px;
+  margin-top: 25px;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
