@@ -14,7 +14,7 @@ function Login() {
         console.log(email, password)
     }
 
-    fetch()
+    fetch("http://localhost:4000")
 
     return (
         <div className="LoginPage">

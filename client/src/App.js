@@ -49,6 +49,10 @@ function App() {
           <Route path="/Login">
             <Login setIsLoggedIn={setIsLoggedIn}/>
           </Route>
+
+          <Route path="/CreateUser">
+            <CreateUser />
+          </Route>
           
           {/* <Route path="/Dashboard">
             <Dashboard />
