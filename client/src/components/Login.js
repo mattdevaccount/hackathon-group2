@@ -14,7 +14,7 @@ function Login() {
         console.log(email, password)
     }
 
-    fetch()
+    // fetch()
 
     return (
         <div className="LoginPage">
@@ -30,7 +30,7 @@ function Login() {
 
                 <div className="PasswordTitle">
                     <p>Password</p>
-                    <input className="password" component="input" type="text" onChange={(event) => {setPassword(event.target.value)}}/>
+                    <input className="password" component="input" type="password" onChange={(event) => {setPassword(event.target.value)}}/>
                 </div>
 
                 <button className="LoginButton" variant="contained" onClick={clickHandler}>Login</button>
