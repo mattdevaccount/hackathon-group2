@@ -35,7 +35,7 @@ const db = mysql.createConnection({
 
 // insert test user
 router.post('/addUser', (req, res) => {
-    let pet = { name: 'Toonrot Humane Society', city: 'Toronto', description: 'Animal Shelter', id: uuid.uuid() };
+    let pet = { name: 'Toronto Humane Society', city: 'Toronto', description: 'Animal Shelter', id: uuid.uuid() };
     let sql = 'INSERT INTO users SET ?';
     let query = db.query(sql, pet, (err, result) => {
       if (err) throw err;
@@ -64,5 +64,13 @@ router.post('/addUser', (req, res) => {
       res.send('User Removed from Database!')
     });
   });
+
+  router.post("/authuser", (req, res) => {
+    const email = req.body.email
+    const password = req.body.password
+    
+    let sql = `select * from users where email = ${req.body.email}`
+
+  })
 
   module.exports = router;
