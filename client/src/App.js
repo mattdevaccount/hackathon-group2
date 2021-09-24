@@ -6,7 +6,6 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import Cookies from 'js-cookie';
 import Home from './components/Home';
 import About from './components/About';
 import Search from './components/Search';
@@ -16,15 +15,9 @@ import LoggedIn from './components/LoggedIn';
 import Dashboard from './components/Dashboard';
 import Post from './components/Post';
 import Manage from './components/Manage';
-
-const isCookie = function() {
-  const cookie = Cookies.get("token");
-  return !!cookie;
-}
+import CreateUser from './components/CreateUser';
 
 function App() {
-
-  const [isLoggedIn, setIsLoggedIn] = useState(isCookie());
 
   return (
     <Router>
@@ -47,7 +40,7 @@ function App() {
           </Route> */}
 
           <Route path="/Login">
-            <Login setIsLoggedIn={setIsLoggedIn}/>
+            <Login />
           </Route>
 
           <Route path="/CreateUser">

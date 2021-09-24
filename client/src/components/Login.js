@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Cookies from 'js-cookie';
 import { useHistory } from "react-router-dom";
 import { Box } from '@material-ui/core/';
 
@@ -14,7 +13,7 @@ function Login() {
         console.log(email, password)
     }
 
-    fetch("http://localhost:4000")
+    // fetch("localhost:4000")
 
     return (
         <div className="LoginPage">

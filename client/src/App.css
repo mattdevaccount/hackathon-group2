@@ -80,7 +80,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 300;
+  font-weight: 350;
   text-align: center;
   margin-top: 5px;
 }
@@ -132,4 +132,88 @@ input.password {
   margin-top: 10px;
   border: none;
   font-size: 17px;
+}
+
+/* Create User Page */
+
+.CreateUserPage {
+  background-image: url("./assets/new_tails_bg.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreateUserBox {
+  height: 600px;
+  width: 530px;
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.CreateUserBox h2 {
+  font-family: 'Gill Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #DF7F66;
+  margin-bottom: 0;
+}
+
+.CreateUserBox p {
+  font-family: 'Montserrat', sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 350;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.CreateEmail p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input.CreateEmail {
+  margin-left: 35px;
+  width: 450px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.CreatePassword p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input.CreatePassword {
+  margin-left: 35px;
+  width: 450px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
 }
