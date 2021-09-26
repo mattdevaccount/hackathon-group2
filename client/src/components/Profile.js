@@ -3,8 +3,9 @@ import "./Profile/profile.css";
 import GetProfileData from "./Profile/ProfileData.js";
 import Stats from "./Profile/stats.js";
 import Footer from "./Profile/Footer.js";
+import Navbar from './Navebar.js'
 
-//not sure how your routes will connect the various cats, but I put the import statments in for the profile pics belowfor future use.
+//not sure how your routes will connect the various cats, but I put the import statments in for the profile pics below, in case they are wanted for future use.  I hardcoded one cat into the array, for display, but I assume the rest of our non-existant cat objects would be in the JSON files...
 
 // import SBandit from './assets/Search-Bandit.jpg'
 // import SFelix from './assets/Search-Felix.jpg'
