@@ -1,9 +1,8 @@
-import { useState } from "react";
 import "./Profile/profile.css";
-// import Navbar from "./Navebar.js";
+import Navbar from "./Navebar.js";
 import Footer from "./Profile/Footer.js";
-import Mikhail from "./assets/mikhail-cropped.jpg";
-import Header from "./assets/Header.png";
+import Mikhail from "./images/mikhail-cropped.jpg";
+import Header from "./images/Header.png";
 
 function AboutUs() {
   return (
@@ -12,7 +11,7 @@ function AboutUs() {
         <div className="HeaderImg">
           <img src={Header} />
         </div>
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="AboutTitle">
           <h2>About Us</h2>
         </div>

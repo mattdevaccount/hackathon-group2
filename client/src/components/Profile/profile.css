@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +14,10 @@ body {
 }
 
 .HeaderContainer {
-  position:relative;
+  position: relative;
 }
 
 .HeaderImg img {
- 
   width: 1440px;
   height: 350px;
 }
@@ -31,7 +29,6 @@ body {
 
 .profileMain {
   display: flex;
- 
 }
 
 .Profile {
@@ -55,7 +52,7 @@ table {
 }
 
 .StatsValues {
-  text-align: right;
+  padding-left: 5em;
 }
 
 .Stats td {
@@ -106,7 +103,7 @@ article h2 {
   bottom: 0;
   left: 0;
   font-size: 48px;
-  margin:0 0 1em 87px;
+  margin: 0 0 1em 87px;
 }
 
 .staticMain p {
@@ -116,8 +113,7 @@ article h2 {
 .staticMain {
   margin-bottom: 2em;
   font-size: 24px;
-margin:0 87px 0 87px;
-
+  margin: 0 87px 0 87px;
 }
 
 .subTitle {

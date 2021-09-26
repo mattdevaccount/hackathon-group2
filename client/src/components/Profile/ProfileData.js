@@ -1,9 +1,8 @@
-import {useState} from 'react'
-import SocksPic from "../assets/Profile-Socks.jpg";
-import S3 from "../assets/Profile-Socks3.jpg";
-import S4 from "../assets/Profile-Socks4.jpg";
-import S6 from "../assets/Search-Socks6.jpg";
-import SS from "../assets/Search-Socks.jpg";
+import SocksPic from "../images/Profile-Socks.jpg";
+import S3 from "../images/Profile-Socks3.jpg";
+import S4 from "../images/Profile-Socks4.jpg";
+import S6 from "../images/Search-Socks6.jpg";
+import SS from "../images/Search-Socks.jpg";
 
 
 const GetProfileData = () => {
