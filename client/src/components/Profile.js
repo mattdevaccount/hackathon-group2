@@ -3,7 +3,8 @@ import "./Profile/profile.css";
 import GetProfileData from "./Profile/ProfileData.js";
 import Stats from "./Profile/stats.js";
 import Footer from "./Profile/Footer.js";
-import Navbar from './Navebar.js'
+import Navbar from "./Navebar.js";
+import Header from "./assets/Header.png";
 
 //not sure how your routes will connect the various cats, but I put the import statments in for the profile pics below, in case they are wanted for future use.  I hardcoded one cat into the array, for display, but I assume the rest of our non-existant cat objects would be in the JSON files...
 
@@ -22,21 +23,26 @@ function PetProfile() {
 
   return (
     <div className="profileBody">
-      <Navbar />
-      <main>
+      <div className="HeaderContainer">
+        <div className="HeaderImg">
+          <img src={Header} />
+        </div>
+        {/* <Navbar /> */}
+      </div>
+      <div className="profileMain">
         <div className="ProfileLeft">
           <img
             className="Profile"
             src={ProfileData.ProfilePic}
             alt={ProfileData.Name}
           />
-           <button>Adopt This Pet</button>
+          <button>Adopt This Pet</button>
         </div>
 
         <div className="StatsContainer">
           <Stats />
         </div>
-      </main>
+      </div>
       <p></p>
       <article>
         <h2>Health</h2>

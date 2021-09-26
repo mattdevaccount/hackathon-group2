@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 
 * {
   margin: 0;
@@ -8,35 +9,56 @@
 }
 
 body {
-  font-family: "Monserrat";
+  font-family: "Montserrat";
   max-width: 1500px;
   margin: auto;
 }
 
-.profileBody {
-    display: flex;
-    flex-direction: column;
+.HeaderContainer {
+  position:relative;
 }
 
-main {
+.HeaderImg img {
+ 
+  width: 1440px;
+  height: 350px;
+}
+
+.profileBody {
   display: flex;
-  flex-flow: nowrap;
+  flex-direction: column;
+}
+
+.profileMain {
+  display: flex;
+ 
 }
 
 .Profile {
-  /* width: 45vw; */
-  width: 700px;
-  height: 650px;
+  width: 95%;
   margin: 1em;
+}
+
+.ProfileLeft {
+  width: 50%;
+  min-width: 450px;
 }
 
 table {
   border-collapse: seperate;
-  border-spacing: 0 20px;
+  border-spacing: 0 19px;
+}
+
+.StatsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.StatsValues {
+  text-align: right;
 }
 
 .Stats td {
-  width: 45vw;
   font-size: 1.5em;
 }
 
@@ -51,16 +73,16 @@ table {
 }
 
 .Thumbs {
-  width: 155px;
-  height: 155px;
-  margin: 2em 0.5em 0em 0.5em;
+  width: 9em;
+  height: 9em;
+  margin: 1.2em 0.5em 0em 0.5em;
 }
 
 button {
+  display: block;
   background-color: #df7f66;
   color: white;
-  /* width: 45vw; */
-  width: 700px;
+  width: 95%;
   font-size: 2em;
   margin: 0em 0.5em 0em 0.5em;
   border-radius: 10px;
@@ -74,6 +96,43 @@ article {
 
 article h2 {
   margin-bottom: 1em;
+  font-size: 1.8em;
+}
+
+/* Styling for Static Pages */
+
+.AboutTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 48px;
+  margin:0 0 1em 87px;
+}
+
+.staticMain p {
+  padding: 1em;
+}
+
+.staticMain {
+  margin-bottom: 2em;
+  font-size: 24px;
+margin:0 87px 0 87px;
+
+}
+
+.subTitle {
+  font-weight: bold;
+}
+
+.AboutImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.AboutImage {
+  width: 1266px;
+  height: 310px;
+  margin: 4em 0 8em 0;
 }
 
 .footer {
@@ -82,7 +141,7 @@ article h2 {
   justify-content: space-around;
   font-family: "Roboto Mono";
   font-size: 12px;
-  height: 200px;
+  height: 199px;
   background-color: #df7f66;
   text-align: center;
 }
