@@ -9,7 +9,7 @@
 
 body {
   font-family: "Montserrat";
-  max-width: 1500px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -52,6 +52,7 @@ table {
 }
 
 .StatsValues {
+  /* text-align: right; */
   padding-left: 5em;
 }
 
@@ -129,6 +130,52 @@ article h2 {
   width: 1266px;
   height: 310px;
   margin: 4em 0 8em 0;
+}
+
+/* Styling for Pet Care  */
+
+.PetCareTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 32px;
+  margin: 0 0 1.5em 87px;
+}
+
+
+.PetCareTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Chewy {
+  order: 2;
+  
+  flex-basis: 35%;
+ 
+}
+
+.Chewy img {
+  max-width: 100%;
+}
+
+.PetArticle {
+  padding-right: 2vw;
+  max-width:65%;
+}
+
+.PetCareMain {
+  font-size: 24px;
+  margin: 0 85px 0 85px;
+}
+
+.PetCareMain p {
+  padding: 1em;
+}
+
+.subTitle.declaration {
+  padding-bottom: 4em;
 }
 
 .footer {
