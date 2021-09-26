@@ -1,44 +1,49 @@
 import React from "react";
-
-import profile from "./assets/Profile-Socks.jpg";
 import "./Profile/profile.css";
+import GetProfileData from "./Profile/ProfileData.js";
 import Stats from "./Profile/stats.js";
-import Button from "./Profile/button.js";
-import Footer from './Profile/Footer.js'
+import Footer from "./Profile/Footer.js";
+
+//not sure how your routes will connect the various cats, but I put the import statments in for the profile pics belowfor future use.
+
+// import SBandit from './assets/Search-Bandit.jpg'
+// import SFelix from './assets/Search-Felix.jpg'
+// import SGoopy from './assets/Search-Goopy.jpg'
+// import SJose from './assets/Search-Jose.jpg'
+// import SLumpy from './assets/Search-Lumpy.jpg'
+// import SPhil from './assets/Search-Phil.jpg'
+// import SPrince from './assets/Search-Prince.jpg'
+// import SSockes from './assets/Search-Socks.jpg'
+// import SSprinkles from './assets/Search-Sprinkles.jpg'
 
 function PetProfile() {
+  const ProfileData = GetProfileData();
+
   return (
-    <div className='profileBody'>
-     <Navbar />
+    <div className="profileBody">
+      <Navbar />
       <main>
-        <img className="Profile" src={profile} alt="Socks" />
-        <Stats />
+        <div className="ProfileLeft">
+          <img
+            className="Profile"
+            src={ProfileData.ProfilePic}
+            alt={ProfileData.Name}
+          />
+           <button>Adopt This Pet</button>
+        </div>
+
+        <div className="StatsContainer">
+          <Stats />
+        </div>
       </main>
-      <p>
-        {" "}
-        <Button />
-      </p>
+      <p></p>
       <article>
         <h2>Health</h2>
-        <p>
-          Neuteured and up to date with FVRCP and rabies vaccinations. No
-          medications needed.
-        </p>
-        <p>I am not a special needs pet.</p>
+        <p>{ProfileData.HealthInfo}</p>
       </article>
       <article>
         <h2>About Me</h2>
-        <p>
-          I was transferred in from another shelter. I am now currently at the
-          Toronto Humane Society My foster parents say that I am a little purr
-          machine. As soon as you walk in the room I starts to purr. I will come
-          to you for cuddle time and will sit on your lap for attention. I am
-          very active and curious and climb the dresser using the drawers as
-          steps. Such a smart kitten! I will also climb people when I want
-          attention. I get along with both my siblings, Simon & Daphne and would
-          love to be adopted with one of them (not mandatory of course). I am
-          not good with dogs. I love other cats. I am good with kids.{" "}
-        </p>
+        <p>{ProfileData.About}</p>
       </article>
 
       <Footer />

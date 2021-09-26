@@ -1,15 +1,15 @@
-import S3 from "./assets/Profile-Socks3.jpg";
-import S4 from "./assets/Profile-Socks4.jpg";
-import S6 from "./assets/Search-Socks6.jpg";
-import SS from "./assets/Search-Socks.jpg";
+import GetProfileData from './ProfileData.js'
 
 const Thumbs = () => {
+
+  const ProfileData = GetProfileData()
+
   return (
     <div>
-      <img className='Thumbs' src={S3} alt="Socks at the Podium" />
-      <img className='Thumbs' src={S4} alt="Socks feeling Festive" />
-      <img className='Thumbs' src={S6} alt="Socks with a Volunteer" />
-      <img className='Thumbs' src={SS} alt="Socks" />
+      <img className='Thumbs' src={ProfileData.Thumb1} alt={ProfileData.Name} />
+      <img className='Thumbs' src={ProfileData.Thumb2} alt={ProfileData.Name} />
+      <img className='Thumbs' src={ProfileData.Thumb3} alt={ProfileData.Name} />
+      <img className='Thumbs' src={ProfileData.Thumb4} alt={ProfileData.Name} />
     </div>
   );
 };
