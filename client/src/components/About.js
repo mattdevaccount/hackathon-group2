@@ -1,5 +1,5 @@
 import "./Profile/profile.css";
-import Navbar from "./Navebar.js";
+import Navbar from "./Navbar.js";
 import Footer from "./Profile/Footer.js";
 import Mikhail from "./images/mikhail-cropped.jpg";
 import Header from "./images/Header.png";
