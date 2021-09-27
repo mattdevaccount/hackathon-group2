@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import About from './components/About';
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
-import PetProfile from "./components/PetProfile";
+import Profile from "./components/Profile";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
@@ -45,7 +45,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/profile" component={PetProfile} />
+        <Route path="/profile" component={Profile} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactForm} />
       </Switch>

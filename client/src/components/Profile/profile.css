@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  max-width: 1440px;
+  margin: auto;
+}
+
+.HeaderContainer {
+  position: relative;
+}
+
+.HeaderImg img {
+  width: 1440px;
+  height: 350px;
+}
+
+.profileBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileMain {
+  display: flex;
+}
+
+.Profile {
+  width: 95%;
+  margin: 1em;
+}
+
+.ProfileLeft {
+  width: 50%;
+  min-width: 450px;
+}
+
+table {
+  border-collapse: seperate;
+  border-spacing: 0 19px;
+}
+
+.StatsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.StatsValues {
+  /* text-align: right; */
+  padding-left: 5em;
+}
+
+.Stats td {
+  font-size: 1.5em;
+}
+
+.Stats .bold {
+  font-weight: bold;
+}
+
+.Stats th {
+  font-size: 3em;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+.Thumbs {
+  width: 9em;
+  height: 9em;
+  margin: 1.2em 0.5em 0em 0.5em;
+}
+
+button {
+  display: block;
+  background-color: #df7f66;
+  color: white;
+  width: 95%;
+  font-size: 2em;
+  margin: 0em 0.5em 0em 0.5em;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+article {
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+article h2 {
+  margin-bottom: 1em;
+  font-size: 1.8em;
+}
+
+/* Styling for Static Pages */
+
+.AboutTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 48px;
+  margin: 0 0 1em 87px;
+}
+
+.staticMain p {
+  padding: 1em;
+}
+
+.staticMain {
+  margin-bottom: 2em;
+  font-size: 24px;
+  margin: 0 87px 0 87px;
+}
+
+.subTitle {
+  font-weight: bold;
+}
+
+.AboutImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.AboutImage {
+  width: 1266px;
+  height: 310px;
+  margin: 4em 0 8em 0;
+}
+
+/* Styling for Pet Care  */
+
+.PetCareTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 32px;
+  margin: 0 0 1.5em 87px;
+}
+
+
+.PetCareTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Chewy {
+  order: 2;
+  
+  flex-basis: 35%;
+ 
+}
+
+.Chewy img {
+  max-width: 100%;
+}
+
+.PetArticle {
+  padding-right: 2vw;
+  max-width:65%;
+}
+
+.PetCareMain {
+  font-size: 24px;
+  margin: 0 85px 0 85px;
+}
+
+.PetCareMain p {
+  padding: 1em;
+}
+
+.subTitle.declaration {
+  padding-bottom: 4em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  height: 199px;
+  background-color: #df7f66;
+  text-align: center;
+}
