@@ -9,7 +9,7 @@ const router = express.Router();
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: "password123!",
   database: "pets_db",
 });
 
@@ -37,7 +37,7 @@ router.get("/getpets/:id", (req, res) => {
 // insert pet 1 test
 router.post("/addPet1", (req, res) => {
   let pet = {
-    name: "Snowball",
+    name: "Superdude",
     city: "Toronto",
     description: "white longhair",
     pet_uuid: uuid.uuid()

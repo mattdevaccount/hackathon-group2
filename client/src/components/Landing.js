@@ -6,7 +6,7 @@ import LargeDiagonal from "./images/HomePage_LargeDiagonal.png"
 import SmallDiagonal from "./images/HomePage_SmallDiagonal.png"
 import HeroPhoto from "./images/HomePageHeroPhoto.jpg"
 import SliderSprinkles from "./images/SliderCatSprinkles.jpg"
-import  WomanAndCat from "./images/womanTalkingToCat.png"
+import WomanAndCat from "./images/womanTalkingToCat.png"
 import ManAndCat from "./images/ManHoldingCat.png"
 import TwoCatsPlaying from "./images/TwoCatsPlaying.jpg"
 
