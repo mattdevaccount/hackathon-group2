@@ -105,3 +105,37 @@
 .adoptButton {
   display: flex;
 }
+
+.filter {
+  border-right:1px solid rgba(196, 196, 196, 0.25);;
+}
+
+.catSelection {
+}
+
+.catBody {
+  padding: 75px 25px 75px 25px;
+}
+
+.filter h1 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+text-align: center;
+}
+
+.CatBar {
+  width: 1011.04px;
+  height: 72.83px;
+  background: #EFEFEF;
+  line-height: 25px;
+   
+}
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}

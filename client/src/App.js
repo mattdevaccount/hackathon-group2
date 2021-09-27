@@ -6,6 +6,7 @@ import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import PetProfile from "./components/PetProfile";
 import ContactForm from "./components/ContactForm";
+import Cats from "./components/Cats";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
@@ -45,6 +46,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route path="/profile" component={PetProfile} />
+        <Route path="/cats" component={Cats} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactForm} />
       </Switch>
