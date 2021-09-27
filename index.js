@@ -18,7 +18,7 @@ app.use('/', pets, users)
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'password',
+  password: 'password123!',
   database: 'pets_db'
 });
 
