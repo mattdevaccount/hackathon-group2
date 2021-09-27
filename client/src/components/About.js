@@ -1,8 +1,5 @@
 import React from 'react'
-
 import "./Profile/profile.css";
-import Navbar from "./Navbar.js";
-// import Footer from "./Profile/Footer.js";
 import Mikhail from "./images/mikhail-cropped.jpg";
 import Header from "./images/Header.png";
 
@@ -65,8 +62,6 @@ function AboutUs() {
       <div className="AboutImageContainer">
         <img className="AboutImage" src={Mikhail} />
       </div>
-
-      {/* <Footer /> */}
     </div>
   );
 }
