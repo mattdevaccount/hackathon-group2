@@ -20,7 +20,7 @@ router.get("/getpets", (req, res) => {
     if (err) throw err;
     console.log(results);
     console.log(typeof req.params.id);
-    res.send("Pets fetched!");
+    res.send(results);
   });
 });
 
@@ -37,7 +37,7 @@ router.get("/getpets/:id", (req, res) => {
 // insert pet 1 test
 router.post("/addPet1", (req, res) => {
   let pet = {
-    name: "Snowball",
+    name: "Superdude",
     city: "Toronto",
     description: "white longhair",
     pet_uuid: uuid.uuid()

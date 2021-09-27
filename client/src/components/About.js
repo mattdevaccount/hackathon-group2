@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 import React from 'react'
 
-export default function About() {
-    return (
-        <div>
-            About Us
-        </div>
-    )
-}
-=======
 import "./Profile/profile.css";
 import Navbar from "./Navbar.js";
-import Footer from "./Profile/Footer.js";
+// import Footer from "./Profile/Footer.js";
 import Mikhail from "./images/mikhail-cropped.jpg";
 import Header from "./images/Header.png";
 
@@ -19,10 +10,6 @@ function AboutUs() {
   return (
     <div className="staticBody">
       <div className="HeaderContainer">
-        <div className="HeaderImg">
-          <img src={Header} />
-        </div>
-        <Navbar />
         <div className="AboutTitle">
           <h2>About Us</h2>
         </div>
@@ -79,10 +66,9 @@ function AboutUs() {
         <img className="AboutImage" src={Mikhail} />
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
 
 export default AboutUs;
->>>>>>> 56457897958738297fbeb1816d935b794bd249e3

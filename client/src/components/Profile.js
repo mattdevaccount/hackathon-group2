@@ -1,7 +1,6 @@
 import "./Profile/profile.css";
 import GetProfileData from "./Profile/ProfileData.js";
 import Stats from "./Profile/stats.js";
-import Footer from "./Profile/Footer.js";
 import Navbar from './Navbar.js'
 import Header from "./images/Header.png";
 
@@ -17,16 +16,15 @@ import Header from "./images/Header.png";
 // import SSockes from './images/Search-Socks.jpg'
 // import SSprinkles from './images/Search-Sprinkles.jpg'
 
-function PetProfile() {
+function Profile() {
   const ProfileData = GetProfileData();
 
   return (
     <div className="profileBody">
       <div className="HeaderContainer">
         <div className="HeaderImg">
-          <img src={Header} />
+          {/* <img src={Header} /> */}
         </div>
-        <Navbar />
       </div>
 
       <div className="profileMain">
@@ -52,10 +50,8 @@ function PetProfile() {
         <h2>About Me</h2>
         <p>{ProfileData.About}</p>
       </article>
-
-      <Footer />
     </div>
   );
 }
 
-export default PetProfile;
+export default Profile;
