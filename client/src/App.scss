@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .App {
+=======
+   .App {
+>>>>>>> main
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
@@ -44,6 +48,10 @@
   position: absolute;
   top: 0;
   left: 55%;
+<<<<<<< HEAD
+=======
+  z-index: 10;
+>>>>>>> main
 }
 
 .navLink {
@@ -104,4 +112,142 @@
 
 .adoptButton {
   display: flex;
+<<<<<<< HEAD
+=======
+}
+
+// landpage styling
+
+.image-stack::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+.FirstContainer {
+  height: 770.2px;
+}
+.LandingFirstImg {
+  width: auto;
+  height: 770.2px;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.LandingSecondImg {
+  width: auto;
+  height: 770.2px;
+  position:relative;
+  float: right;
+}
+
+.secondContainer {
+  height: 337.99px;
+}
+.CatSectionFirstImg {
+  width: 345.97px;
+  height: 337.99px;
+  position:absolute;
+  z-index: 1;
+}
+
+.CatSectionSecondImg {
+  width: 1440px;
+  height: 337.99px;
+  position:relative;
+  float: right;
+}
+
+.WelcomeContent {
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+}
+
+.FindACatButton {
+  z-index: 10;
+  background-color: #EFC1B4 ;
+  position: absolute;
+  left: 787px;
+  top: 190px;
+  height: 113px;
+  width: 288px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.CatInfo{
+  z-index: 50;
+  position: absolute;
+  top: 800px;
+  left: 37px;
+  color: white;
+}
+
+.CatTag {
+  position:absolute;
+  width: 300px;
+  height: 112.24px;
+  top: -30px;
+  left: 1160px;
+  background: #BA624A;
+  color: black;
+  text-align: center;
+  line-height: 112.24px;
+}
+.Article {
+  width: 686.5px;
+  height: 420px;
+  margin: 0;
+}
+
+.missionStatementImage {
+  width: 1440px;
+  height: 420px;
+}
+
+.ArticleTitle {
+  position:absolute;
+  width: 300px;
+  height: 112.24px;
+  top: 15px;
+  background: #BA624A;
+  text-align: center;
+  line-height: 112.24px;
+}
+
+.container {
+  position: relative;
+  
+
+}
+
+.missionStatement {
+  position:absolute;
+  width: 973px;
+  height: 125px;;
+  top: 225px;
+  left: 190px;
+  color: white;
+  background:rgba(26, 26, 26, 0.4);
+  border-radius: 3px;
+  line-height: 29.26px;
+  text-align: center;
+
+}
+
+// footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+  height: 199px;
+  background-color: #df7f66;
+  text-align: center;
+  margin-top: 20px;
+>>>>>>> main
 }

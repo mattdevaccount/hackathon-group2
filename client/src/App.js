@@ -4,9 +4,15 @@ import React, { useState, useEffect } from "react";
 import About from './components/About';
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
+<<<<<<< HEAD
 import PetProfile from "./components/PetProfile";
 import ContactForm from "./components/ContactForm";
 import Cookies from 'js-cookie';
+=======
+import Profile from "./components/Profile";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+>>>>>>> main
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
