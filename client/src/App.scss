@@ -211,7 +211,6 @@
 
 .container {
   position: relative;
-  
 
 }
 
@@ -240,4 +239,133 @@
   background-color: #df7f66;
   text-align: center;
   margin-top: 20px;
+}
+
+// login styling
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Login Page */
+
+.LoginPage {
+  background-image: url("./components/images/new_tails_bg.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginBox {
+  height: 370px;
+  width: 530px;
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.LoginBox h2 {
+  font-family: 'Gill Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #DF7F66;
+  margin-bottom: 0;
+}
+
+.LoginBox p {
+  font-family: 'Montserrat', sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.EmailTitle p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input.email {
+  margin-left: 35px;
+  width: 450px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.PasswordTitle p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input.password {
+  margin-left: 35px;
+  width: 450px;
+  height: 42px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.LoginButton {
+  background: #DF7F66;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 15px;
+  width: 140px;
+  height: 45px;
+  margin-left: 340px;
+  margin-top: 10px;
+  border: none;
+  font-size: 17px;
 }
