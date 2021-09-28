@@ -1,6 +1,10 @@
 const express = require("express");
 const mysql = require("mysql");
+<<<<<<< HEAD
 const cors = require('cors');
+=======
+const bodyParser = require('body-parser');
+>>>>>>> 17696b2da11731fa43280f3ed7b9a6e1360da828
 
 const pets = require('./routes/pets')
 const users = require('./routes/users')
@@ -12,13 +16,20 @@ const app = express();
 app.use(cors());
 
 // using routes to add pets
+<<<<<<< HEAD
 app.use('/', pets, users)
+=======
+app.use(bodyParser.json())
+app.use('/', pets)
+app.use ('/', users)
+
+>>>>>>> 17696b2da11731fa43280f3ed7b9a6e1360da828
 
 // create connection
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'password123!',
+  password: 'password',
   database: 'pets_db'
 });
 
@@ -44,7 +55,7 @@ app.get("/createpetstable", (req, res) => {
 // creating a users table
 app.get("/createuserstable", (req, res) => {
   let sql =
-    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
+    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), password VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);

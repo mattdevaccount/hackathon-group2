@@ -35,16 +35,6 @@ router.get("/getuser/:id", (req, res) => {
 });
 
 // insert test user
-<<<<<<< HEAD
-router.post('/addUser', (req, res) => {
-    let pet = { name: 'Toronto Humane Society', city: 'Toronto', description: 'Animal Shelter', id: uuid.uuid() };
-    let sql = 'INSERT INTO users SET ?';
-    let query = db.query(sql, pet, (err, result) => {
-      if (err) throw err;
-      console.log(result);
-      res.send('User 1 added')
-    })
-=======
 router.post("/adduser", (req, res) => {
   let user = {
     name: "Toronto Humane Society",
@@ -57,7 +47,6 @@ router.post("/adduser", (req, res) => {
     if (err) throw err;
     console.log(result);
     res.send(`${user.name} added`);
->>>>>>> main
   });
 });
 
@@ -82,16 +71,16 @@ router.delete("/deleteuser/:id", (req, res) => {
   });
 });
 
-<<<<<<< HEAD
   router.post("/authuser", (req, res) => {
     const email = req.body.email
     const password = req.body.password
     
-    let sql = `select * from users where email = ${req.body.email}`
+    let sql = `select * from users where email = ${req.body.email}`;
+    db.query(sql, (err, result) => {
+      if (err) throw err;
+      console.log("the user????", result)
+    })
 
   })
 
   module.exports = router;
-=======
-module.exports = router;
->>>>>>> main

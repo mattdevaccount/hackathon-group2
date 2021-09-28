@@ -9,7 +9,7 @@ const router = express.Router();
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password123!",
+  password: "password",
   database: "pets_db",
 });
 
