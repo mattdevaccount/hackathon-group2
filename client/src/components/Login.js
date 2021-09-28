@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Cookies from 'js-cookie';
 import { useHistory } from "react-router-dom";
 import { Box } from '@material-ui/core/';
 

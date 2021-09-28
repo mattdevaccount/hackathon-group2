@@ -9,7 +9,7 @@ const router = express.Router();
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password123!',
+    password: 'password',
     database: 'pets_db'
   });
 
@@ -69,7 +69,11 @@ router.post('/addUser', (req, res) => {
     const email = req.body.email
     const password = req.body.password
     
-    let sql = `select * from users where email = ${req.body.email}`
+    let sql = `select * from users where email = ${req.body.email}`;
+    db.query(sql, (err, result) => {
+      if (err) throw err;
+      console.log("the user????", result)
+    })
 
   })
 
