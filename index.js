@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const pets = require('./routes/pets')
 const users = require('./routes/users')
@@ -44,7 +45,7 @@ app.get("/createpetstable", (req, res) => {
 // creating a users table
 app.get("/createuserstable", (req, res) => {
   let sql =
-    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
+    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), password VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);

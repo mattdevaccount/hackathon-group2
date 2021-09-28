@@ -71,4 +71,16 @@ router.delete("/deleteuser/:id", (req, res) => {
   });
 });
 
-module.exports = router;
+  router.post("/authuser", (req, res) => {
+    const email = req.body.email
+    const password = req.body.password
+    
+    let sql = `select * from users where email = ${req.body.email}`;
+    db.query(sql, (err, result) => {
+      if (err) throw err;
+      console.log("the user????", result)
+    })
+
+  })
+
+  module.exports = router;

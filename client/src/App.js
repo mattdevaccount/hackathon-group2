@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import Login from "./components/Login"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
@@ -45,11 +46,18 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/profile" component={Profile} />
+        <Route 
+        path="/profile" 
+        component={Profile}
+        petPool={petPool} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactForm} />
+        <Route 
+          path="/login" 
+          component={Login}
+          userPool={userPool} />
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
