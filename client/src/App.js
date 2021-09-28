@@ -4,15 +4,10 @@ import React, { useState, useEffect } from "react";
 import About from './components/About';
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
-<<<<<<< HEAD
-import PetProfile from "./components/PetProfile";
-import ContactForm from "./components/ContactForm";
-import Cookies from 'js-cookie';
-=======
 import Profile from "./components/Profile";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
->>>>>>> main
+import Login from "./components/Login"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
@@ -53,11 +48,16 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route 
         path="/profile" 
-        component={PetProfile}
+        component={Profile}
         petPool={petPool} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactForm} />
+        <Route 
+          path="/login" 
+          component={Login}
+          userPool={userPool} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

@@ -1,29 +1,29 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-import TextField from '@material-ui/core/TextField';
-import { Field, reduxForm } from 'redux-form';
+import { Box } from '@material-ui/core/';
 
+function Login(props) {
 
-function Login() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-        return (
-            <div className="LoginPage">
-                <div className="LoginBox">
-                    <h2>New Tails</h2>
-                    <p>Welcome Back!</p>
-                    <form>
-                        <label>Email</label>
-                        <div>
-                            <Field name="email" component="input" type="text"/>
-                        </div>
+    const clickHandler= () => {
+        console.log("hello")
+        console.log(props.userPool.name)
+        console.log(email, password)
+    }
 
-                        <label>Password</label>
-                        <div>
-                            <Field name="password" component="input" type="text"/>
-                        </div>
+    // fetch()
 
-                        <button className="LoginButton">Login</button>
-                    </form>
+    return (
+        <div className="LoginPage">
+            <Box className="LoginBox">
+                <h2>New Tails</h2>
+                <p>Welcome Back!</p>
+                <div className="EmailTitle">
+                    <p>Email</p>
+                    <div className="EmailForm">
+                        <input className="email" component="input" type="text" onChange={(event) => {setEmail(event.target.value)}}/>
+                    </div>
                 </div>
 
                 <div className="PasswordTitle">
@@ -32,6 +32,7 @@ function Login() {
                 </div>
 
                 <button className="LoginButton" variant="contained" onClick={clickHandler}>Login</button>
+            </Box>
         </div>
     )
 }
