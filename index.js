@@ -44,7 +44,7 @@ app.get("/createpetstable", (req, res) => {
 // creating a users table
 app.get("/createuserstable", (req, res) => {
   let sql =
-    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), description VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
+    "CREATE TABLE users(id int AUTO_INCREMENT, name VARCHAR(255), city VARCHAR(255), messages VARCHAR(255), user_uuid VARCHAR(255), PRIMARY KEY(id))";
   db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);
