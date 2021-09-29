@@ -54,8 +54,11 @@ function App() {
         <Route path="/contact" component={ContactForm} />
         <Route 
           path="/login" 
-          component={Login}
-          userPool={userPool} />
+          render={() => (
+          <Login
+          userPool={userPool}
+          />
+          )} />
       </Switch>
       <Footer />
     </Router>
