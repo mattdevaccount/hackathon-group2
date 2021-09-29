@@ -38,8 +38,12 @@ router.get("/getpets/:id", (req, res) => {
 router.post("/addPet1", (req, res) => {
   let pet = {
     name: "Superdude",
+    breed: "maine coon",
+    age: '2',
+    hair:'long',
+    colour: 'red and white',
     city: "Toronto",
-    description: "white longhair",
+    description: "big loving boy",
     pet_uuid: uuid.uuid()
   };
   let sql = "INSERT INTO pets SET ?";
@@ -56,6 +60,7 @@ router.post("/addPet2", (req, res) => {
     name: "Snowball II",
     city: "Toronto",
     description: "black longhair",
+    colour: 'black',
     pet_uuid: uuid.uuid()
   };
   let sql = "INSERT INTO pets SET ?";

@@ -39,7 +39,8 @@ router.post("/adduser", (req, res) => {
   let user = {
     name: "Toronto Humane Society",
     city: "Toronto",
-    description: "Animal Shelter",
+    password: "testpassword",
+    messages: [],
     user_uuid: uuid.uuid()
   };
   let sql = "INSERT INTO users SET ?";
