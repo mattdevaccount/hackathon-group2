@@ -23,7 +23,6 @@ function Profile() {
 
   return (
     <div className="profileBody">
-
       <div className="profileMain">
         <div className="ProfileLeft">
           <img

@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import { Box } from '@material-ui/core/';
 
 function Login(props) {
-
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const clickHandler= () => {
         console.log("hello")
-        console.log(props.userPool.name)
-        console.log(email, password)
+        console.log(props.userPool)
     }
-
-    // fetch()
 
     return (
         <div className="LoginPage">
@@ -25,12 +21,10 @@ function Login(props) {
                         <input className="email" component="input" type="text" onChange={(event) => {setEmail(event.target.value)}}/>
                     </div>
                 </div>
-
                 <div className="PasswordTitle">
                     <p>Password</p>
                     <input className="password" component="input" type="password" onChange={(event) => {setPassword(event.target.value)}}/>
                 </div>
-
                 <button className="LoginButton" variant="contained" onClick={clickHandler}>Login</button>
             </Box>
         </div>
