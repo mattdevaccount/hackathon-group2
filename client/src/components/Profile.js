@@ -16,10 +16,12 @@ import { Link } from "react-router-dom";
 // import SSockes from './images/Search-Socks.jpg'
 // import SSprinkles from './images/Search-Sprinkles.jpg'
 
-function Profile() {
-  const [contact, setContact] = useState(false)
-
+function Profile(props) { 
   const ProfileData = GetProfileData();
+
+  const proptest = () => {
+    console.log(props)
+  }
 
   return (
     <div className="profileBody">
@@ -35,6 +37,7 @@ function Profile() {
 
         <div className="StatsContainer">
           <Stats />
+          <button onClick={proptest}>Test</button>
         </div>
       </div>
       <p></p>
