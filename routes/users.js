@@ -40,8 +40,9 @@ router.post("/adduser", (req, res) => {
     name: "Toronto Humane Society",
     city: "Toronto",
     password: "testpassword",
-    messages: ['test', 'test2'],
-    user_uuid: uuid.uuid()
+    email: "test@email.com",
+    messages: ["test"],
+    user_uuid: uuid.uuid(),
   };
   let sql = "INSERT INTO users SET ?";
   let query = db.query(sql, user, (err, result) => {
@@ -68,20 +69,19 @@ router.delete("/deleteuser/:id", (req, res) => {
   let query = db.query(sql, (err, result) => {
     if (err) throw err;
     console.log(result);
-    res.send('User Removed from Database!');
+    res.send("User Removed from Database!");
   });
 });
 
-  router.post("/authuser", (req, res) => {
-    const email = req.body.email
-    const password = req.body.password
-    
-    let sql = `select * from users where email = ${req.body.email}`;
-    db.query(sql, (err, result) => {
-      if (err) throw err;
-      console.log("the user????", result)
-    })
+router.post("/authuser", (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password;
 
-  })
+  let sql = `select * from users where email = ${req.body.email}`;
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log("the user????", result);
+  });
+});
 
-  module.exports = router;
+module.exports = router;

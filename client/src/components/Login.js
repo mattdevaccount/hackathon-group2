@@ -6,7 +6,6 @@ function Login(props) {
     const [password, setPassword] = useState("");
 
     const clickHandler= () => {
-        console.log("hello")
         console.log(props.userPool)
     }
 
