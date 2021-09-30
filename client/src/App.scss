@@ -131,7 +131,6 @@
   height: 770.2px;
   position:absolute;
   z-index: 1;
-  top: 0;
   left: 0;
 }
 
@@ -162,7 +161,7 @@
 .WelcomeContent {
   z-index: 50;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 16px;
 }
 
@@ -181,7 +180,7 @@
 .CatInfo{
   z-index: 50;
   position: absolute;
-  top: 800px;
+  top: 1175px;
   left: 37px;
   color: white;
 }
@@ -190,11 +189,12 @@
   position:absolute;
   width: 300px;
   height: 112.24px;
-  top: -30px;
+  top: -20px;
   left: 1160px;
   background: #BA624A;
   color: black;
   text-align: center;
+  font-size: 20px;
   line-height: 112.24px;
 }
 .Article {
@@ -212,9 +212,10 @@
   position:absolute;
   width: 300px;
   height: 112.24px;
-  top: 15px;
+  top: 45px;
   background: #BA624A;
   text-align: center;
+  font-size: 20px;
   line-height: 112.24px;
 }
 
