@@ -1,5 +1,5 @@
 import "./Profile/profile.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GetProfileData from "./Profile/ProfileData.js";
 import Stats from "./Profile/stats.js";
 import { Link } from "react-router-dom";
@@ -18,9 +18,12 @@ import { Link } from "react-router-dom";
 
 function Profile(props) { 
   const ProfileData = GetProfileData();
+  const [catProfile, setCatProfile] = useState([props.petPool]);
+  const [catID, setCatID] = useState();
+
 
   const proptest = () => {
-    console.log(props)
+    console.log(props.petPool.breed)
   }
 
   return (
@@ -32,12 +35,43 @@ function Profile(props) {
             src={ProfileData.ProfilePic}
             alt={ProfileData.Name}
           />
-          <button><Link className='adoptButton' to="/contact">Adopt This Pet</Link></button>
+          <button onClick={proptest}><Link className='adoptButton' to="/contact">Adopt This Pet</Link></button>
         </div>
 
-        <div className="StatsContainer">
-          <Stats />
-          <button onClick={proptest}>Test</button>
+          <div className="Stats">
+      <table>
+        <tr>
+          <th>{props.petPool[0].name}</th>
+        </tr>
+        <tr>
+          <td className="bold">Breed:</td>
+          <td className="StatsValues">{props.petPool[0].breed}</td>
+        </tr>
+        <tr>
+          <td className="bold">Sex:</td>
+          <td className="StatsValues">{props.petPool[0].sex}</td>
+        </tr>
+        <tr>
+          <td className="bold">Age:</td>
+          <td className="StatsValues">{props.petPool[0].age} years</td>
+        </tr>
+        <tr>
+          <td className="bold">Colour:</td>
+          <td className="StatsValues">{props.petPool[0].colour}</td>
+        </tr>
+        <tr>
+          <td className="bold">Hair:</td>
+          <td className="StatsValues">{props.petPool[0].hair}</td>
+        </tr>
+        <tr>
+          <td className="bold">Pet ID:</td>
+          <td className="StatsValues">{props.petPool[0].pet_uuid}</td>
+        </tr>
+        <tr>
+          <td className="bold">Been in Shelter Since:</td>
+          <td className="StatsValues">{props.petPool[0].date}</td>
+        </tr>
+      </table>
         </div>
       </div>
       <p></p>

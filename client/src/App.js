@@ -46,10 +46,10 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route Path="/profile" render={() => <Profile petPool={petPool}/>} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactForm} />
         <Route path="/login" render={() => <Login userPool={userPool} />} />
+        <Route Path="/profile" component={Profile} render={() => <Profile petPool={petPool}/>} />
       </Switch>
       <Footer />
     </Router>

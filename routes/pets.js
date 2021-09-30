@@ -43,7 +43,8 @@ router.post("/addPet1", (req, res) => {
     hair:'long',
     colour: 'red and white',
     city: "Toronto",
-    description: "big loving boy",
+    description: "My foster parents say that I am a little purr machine. As soon as you walk in the room I starts to purr. I will come to you for cuddle time and will sit on your lap for attention. I am not good with dogs. I love other cats. I am good with kids.",
+    health: "Neuteured and up to date with FVRCP and rabies vaccinations. No medications needed. I am not a special needs pet.",
     pet_uuid: uuid.uuid()
   };
   let sql = "INSERT INTO pets SET ?";

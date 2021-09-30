@@ -8,7 +8,7 @@ export default function Navbar() {
       <img className="header" src={Header} alt="Header" />
       <div className="navbar-links">
         <div className='navLink'><Link to="/">Home</Link></div>
-        <div className='navLink'><Link to="/profile">Profile</Link></div>
+        <div className='navLink'><Link to="/profile">Profiles</Link></div>
         <div className='navLink'><Link to="/about">About Us</Link></div>
         <div className='navLink'><Link to="/login">Login</Link></div>
       </div>
