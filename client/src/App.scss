@@ -3,6 +3,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  color: #DF7F66;
+  font-family: "Gill Sans";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 45px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .contact-form-subheader1 {
   font-weight: bold;
   font-size: larger;
@@ -36,6 +48,7 @@
   width: 1440px;
   height: 350px;
 }
+
 
 // navbar styling
 
@@ -104,4 +117,57 @@
 
 .adoptButton {
   display: flex;
+}
+
+//Dashboard//
+
+.WelcomePage {
+  padding: 45px 0px;
+}
+
+.WelcomeHeader {
+  background-color: #F0C3B6;
+  color: #ffffff;
+  padding: 50px;
+  font-size: 28px;
+  text-align: left;
+}
+
+.WelcomeDash {
+  margin-left: 300px;
+  display: flex;
+}
+
+.LeftPanel {
+  margin-left: 35px;
+  margin-top: 20px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.LeftPanel p {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  &:hover {
+    color: #DF7F66;
+  }
+}
+
+hr {
+  transform: rotate(
+    90deg);
+  width: 600px;
+  margin-top: 100px;
+  position: absolute;
+}
+
+.PetDash {
+  margin-left: 300px;
+}
+
+img.ProfilePic {
+  height: 200px;
+  width: 210px;
+  border-radius: 10px;
 }

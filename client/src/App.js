@@ -50,7 +50,7 @@ function App() {
         petPool={petPool} /> */}
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactForm} />
-        <route path="/dashboard" component={Dashboard} />
+        <Route path="/dashboard" component={Dashboard} />
       </Switch>
     </Router>
   );

@@ -16,7 +16,7 @@ function Dashboard() {
                 <p>Manage Account</p>
             </div>
 
-            <div className="Border"></div>
+            <hr />
 
             <div className="WelcomeDash">
                 <img src={ProfilePic} className="ProfilePic"></img>
